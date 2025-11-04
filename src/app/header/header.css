@@ -3,51 +3,121 @@ body {
   font-family: sans-serif;
 }
 
+/* ===== Header ===== */
 .topbar {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  background: #e62329;
-  padding: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 }
 
-.logo img {
-  height: 40px;
+/* ===== Logo responsivo ===== */
+.logo-and-text img {
+  height: 45px;
+  width: auto;
+  max-width: 100%;
+  transition: height 0.3s ease;
 }
 
+/* Tamanho do logo conforme a tela */
+@media (min-width: 480px) {
+  .logo-and-text img {
+    height: 55px; /* tablets pequenos */
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-and-text img {
+    height: 65px; /* tablets e notebooks */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-and-text img {
+    height: 80px; /* telas grandes */
+  }
+
+  .topbar {
+    padding: 12px 80px;
+  }
+
+  .dropdown-right a {
+    font-size: 16px;
+  }
+}
+
+/* ===== Botão do menu (mobile) ===== */
 .menu-btn {
+  font-size: 26px;
   background: none;
   border: none;
-  font-size: 28px;
-  color: #fff;
   cursor: pointer;
+  display: block;
+  z-index: 1001;
 }
 
+/* Esconde o botão no desktop */
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* ===== Menu dropdown (mobile corrigido) ===== */
 .dropdown-right {
   position: absolute;
-  right: 8px;
-  top:20px;
-  background: #e62329;
+  top: 70px; /* logo abaixo do header */
+  right: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 0 20px;
   width: 220px;
   height: 0;
   overflow: hidden;
-  transition: height .35s ease;
-  border-radius: 0 0 8px 8px;
+  transition: height 0.35s ease, opacity 0.3s ease;
+  opacity: 0;
+  z-index: 999;
 }
 
 .dropdown-right.open {
   height: 350px;
+  opacity: 1;
 }
 
 .dropdown-right a {
-  color: #fff;
+  padding: 12px 20px;
+  color: #333;
   text-decoration: none;
-  font-size: 18px;
-  padding-top: 6px;
+  width: 100%;
+}
+
+.dropdown-right a:hover {
+  background-color: #f2f2f2;
+}
+
+/* ===== Versão Desktop ===== */
+@media (min-width: 768px) {
+  .dropdown-right {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    opacity: 1;
+    box-shadow: none;
+    width: auto;
+    background: transparent;
+  }
+
+  .dropdown-right a {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
 }
