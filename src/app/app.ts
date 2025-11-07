@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header';
+import { MainComponent } from './main/main';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent, MainComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-export class App {}  // <-- esse nome precisa ser igual ao do main.ts
+export class AppComponent {}  // ✅ nome padrão e independente
