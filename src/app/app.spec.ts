@@ -1,5 +1,14 @@
-import { TestBed } from '@angular/core/testing';
-import { App } from './app';
+import { Component } from '@angular/core';
+import {TestBed} from '@angular/core/testing';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  templateUrl: './app.html',
+  styleUrls: ['./app.css']
+})
+export class App {}
+
 
 describe('App', () => {
   beforeEach(async () => {
