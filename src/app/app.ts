@@ -1,8 +1,8 @@
- import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header';
-import { MainComponent } from './main/main';
- import {MetodologiaComponent} from './pages/metodologia/metodologia.component';
+import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
+import {MetodologiaComponent} from './pages/metodologia/metodologia.component';
 
 @Component({
   selector: 'app-root',

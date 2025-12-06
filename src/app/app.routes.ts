@@ -9,6 +9,8 @@ export const routes: Routes = [
         .then(c => c.SobreNosComponent)
   },
 
+
+
   {
     path: 'metodologia',
     loadComponent: () =>
