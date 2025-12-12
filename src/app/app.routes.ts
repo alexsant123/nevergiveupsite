@@ -5,8 +5,8 @@ export const routes: Routes = [
   {
     path: 'sobre-nos',
     loadComponent: () =>
-      import('./pages/sobre-nos/sobre-nos.component')
-        .then(c => c.SobreNosComponent)
+      import('./pages/quem-somos/quem-somos.component')
+        .then(c => c.QuemSomosComponent)
   },
 
 
@@ -16,6 +16,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/metodologia/metodologia.component')
         .then(c => c.MetodologiaComponent)
-  }
+  },
 
+  {
+    path: 'teacher-regis',
+    loadComponent: () =>
+      import('./pages/teacher-regis/teacher-regis.component')
+        .then(m => m.TeacherRegisComponent)
+  },
 ];
