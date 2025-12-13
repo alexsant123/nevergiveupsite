@@ -1,0 +1,18 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Altura do carrossel */
+.carousel-inner {
+  height: auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+ :host {
+  display: block;
+  margin-bottom: 40px; /* pode aumentar */
+}

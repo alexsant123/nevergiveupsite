@@ -1,0 +1,43 @@
+.metodologia-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #0b1026;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.titulo {
+  color: #a21112;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #6d7996;
+  margin-bottom: 35px;
+}
+
+.subtitulo {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #0b1026;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.texto {
+  color: #7c8ca5;
+  font-size: 1.05rem;
+  line-height: 1.7rem;
+  margin-bottom: 20px;
+}
+
+/* Ícones */
+.subtitulo span {
+  font-size: 1.7rem;
+}

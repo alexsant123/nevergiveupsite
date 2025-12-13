@@ -1,0 +1,57 @@
+.regis-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0b1026; /* azul escuro */
+  line-height: 1.7;
+}
+
+.regis-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.regis-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0b1026;
+  margin-bottom: 10px;
+}
+
+.regis-header img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.regis-subtitle {
+  font-size: 20px;
+  color: #6d7996;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.regis-highlight {
+  background-color: #a21112; /* vermelho */
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 35px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.regis-container p {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #0b1026;
+}
+
+.regis-container strong {
+  color: #a21112; /* destaque em vermelho */
+}
