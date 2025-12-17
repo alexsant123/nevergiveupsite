@@ -1,57 +1,60 @@
-.regis-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  font-family: 'Segoe UI', sans-serif;
-  color: #0b1026; /* azul escuro */
-  line-height: 1.7;
-}
-
 .regis-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .regis-header h1 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #0b1026;
-  margin-bottom: 10px;
+  color: #707a95;
+  margin-bottom: 1.5rem;
 }
 
-.regis-header img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+/* CONTÊINER DA FOTO */
+.regis-photo {
+  width: 200px;        /* ⬅ aumentei aqui */
+  height: 300px;       /* ⬅ aumentei aqui */
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #a21112; /* vermelho do site */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* IMAGEM */
+.regis-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* evita ficar compactada */
+}
+
+/* SUBTÍTULO */
 .regis-subtitle {
-  font-size: 20px;
   color: #6d7996;
-  font-weight: 600;
-  margin-top: 5px;
+  font-size: 1rem;
 }
-
 .regis-highlight {
-  background-color: #a21112; /* vermelho */
-  color: white;
-  font-size: 22px;
-  font-weight: 700;
-  padding: 15px 20px;
+  background: linear-gradient(90deg, #0b1026, #a21112);
+  color: #ffffff;
+  padding: 0.9rem 1.2rem;
   border-radius: 8px;
+  margin: 1.5rem auto 2rem;
   text-align: center;
-  margin: 35px 0;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+  max-width: 420px;
 }
 
-.regis-container p {
-  font-size: 18px;
-  margin-bottom: 18px;
-  color: #0b1026;
+
+
+@media (max-width: 600px) {
+  .regis-photo {
+    width: 170px;
+    height: 220px;
+  }
+
+  .regis-highlight {
+    font-size: 0.95rem;
+    margin: 1.2rem;
+  }
 }
 
-.regis-container strong {
-  color: #a21112; /* destaque em vermelho */
-}

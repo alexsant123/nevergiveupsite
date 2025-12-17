@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
 
   {
-    path: 'sobre-nos',
+    path: 'quem-somos',
     loadComponent: () =>
       import('./pages/quem-somos/quem-somos.component')
         .then(c => c.QuemSomosComponent)
