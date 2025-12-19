@@ -11,6 +11,12 @@
   object-fit: cover;
 }
 
+app-main {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-top: 150px; /* se o header for fixo */
+}
 
  :host {
   display: block;

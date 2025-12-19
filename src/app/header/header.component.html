@@ -1,4 +1,4 @@
-<header class="topbar">
+<header class="top--bar">
   <section class="logo-and-text">
     <img src="assets/imgs/ngulogo.png" alt="Logo">
   </section>
@@ -7,12 +7,12 @@
 
   <div class="content-nav">
     <nav class="dropdown-right" [class.open]="menuOpen">
-      <a routerLink="/quem-somos">Quem somos  </a>
-      <a routerLink="/metodologia">Metodologia</a>
-      <a routerLink="/teacher-regis">Teacher Regis</a>
-      <a href="#">Kids</a>
-      <a href="#">Inglês corporativo</a>
-       <a href="#">Fale conosco</a>
-    </nav>
+      <a routerLink="/quem-somos" (click)="closeMenu()">Quem somos  </a>
+      <a routerLink="/metodologia" (click)="closeMenu()">Metodologia</a>
+      <a routerLink="/teacher-regis" (click)="closeMenu()">Teacher Regis</a>
+      <a routerLink="/kids" (click)="closeMenu()">Kids</a>
+      <a routerLink="/corporate" (click)="closeMenu()">Inglês Corporativo</a>
+
+     </nav>
   </div>
 </header>

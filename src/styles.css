@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --header-height: 120px;
+}
+
+router-outlet + * {
+  margin-top: var(--header-height);
+}
+html {
+  overflow-y: scroll;
+}
+
+.conteudo {
+  padding-top: 40px; /* MESMO valor do header */
+}

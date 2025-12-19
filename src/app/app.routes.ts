@@ -9,7 +9,11 @@ export const routes: Routes = [
         .then(c => c.QuemSomosComponent)
   },
 
-
+  {
+    path: '',
+    loadComponent: () =>
+      import('./main/main.component').then(m => m.MainComponent)
+  },
 
   {
     path: 'metodologia',
