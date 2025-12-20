@@ -9,6 +9,10 @@ html {
   overflow-y: scroll;
 }
 
+
 .conteudo {
-  padding-top: 40px; /* MESMO valor do header */
+  width: 100%;
+  max-width: 100%;
+  padding-top: 100px;
+  box-sizing: border-box;
 }
