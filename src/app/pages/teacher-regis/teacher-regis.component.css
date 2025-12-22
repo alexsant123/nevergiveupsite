@@ -1,81 +1,126 @@
-/* CONTAINER PRINCIPAL */
+/* ============================
+   CONTAINER PRINCIPAL
+============================ */
 .regis-container {
   width: 100%;
-  max-width: 720px;      /* largura confortável no mobile */
+  max-width: 720px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px 20px;
   box-sizing: border-box;
 }
 
-/* HEADER */
+/* ============================
+   HEADER
+============================ */
 .regis-header {
   text-align: center;
+  margin-bottom: 16px;
 }
 
-/* FOTO */
+/* Nome */
+.regis-name {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0b1026;
+  margin-bottom: 8px;
+}
+
+/* Subtítulo */
+.regis-subtitle {
+  font-size: 1rem;
+  color: #6d7996;
+  margin-bottom: 18px;
+}
+
+/* ============================
+   FOTO
+============================ */
 .regis-photo {
-  width: 260px;
-  height: 360px;
-  margin: 40px auto;
+  width: 280px;
+  height: 420px;
+  margin: 0 auto 18px auto;
   padding: 8px;
-  background: linear-gradient(135deg, #9a1011, #051b50);
-  border-radius: 14px;
+  background: linear-gradient(135deg, #a21112, #0b1026);
+  border-radius: 18px;
   box-sizing: border-box;
 }
 
 .regis-photo img {
-  overflow: hidden;
   width: 100%;
-  height: 140%;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;          /* resolve corte */
+  object-position: center;    /* centraliza */
+  border-radius: 14px;
   display: block;
 }
 
-/* SUBTÍTULO */
-.regis-subtitle {
-
-  font-size: 1rem;
-  color: #475569;
-  margin-top: 110px;
-}
-
-/* DESTAQUE */
+/* ============================
+   DESTAQUE (+15 ANOS)
+============================ */
 .regis-highlight {
-  margin-bottom: 48px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  background: linear-gradient(135deg, #9a1011, #051b50);
-  color: #fff;
-  padding: 14px 20px;
-  border-radius: 12px;
-  font-weight: 600;
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #a21112, #0b1026);
+  color: #fff;
+
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  margin: 12px auto 32px auto;
+  max-width: 90%;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
-/* CONTEÚDO — AQUI ESTÁ A CHAVE 🔑 */
+/* ============================
+   CONTEÚDO
+============================ */
 .regis-content {
   width: 100%;
-  margin-top: 40px;
   font-size: 16px;
   line-height: 1.8;
   color: #334155;
-
-  /* ISSO resolve o problema */
   text-align: left;
 }
 
-/* PARÁGRAFOS */
 .regis-content p {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
-/* MOBILE PEQUENO */
+/* ============================
+   RESPONSIVO
+============================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .regis-photo {
+    width: 260px;
+    height: 380px;
+  }
+
+  .regis-name {
+    font-size: 1.7rem;
+  }
+}
+
+/* Mobile */
 @media (max-width: 480px) {
   .regis-photo {
-    width: 220px;
-    height: 220px;
+    width: 260px;
+    height: 380px;
+  }
+
+  .regis-highlight {
+    font-size: 0.9rem;
+    padding: 12px 18px;
+  }
+
+  .regis-name {
+    font-size: 1.6rem;
   }
 }
