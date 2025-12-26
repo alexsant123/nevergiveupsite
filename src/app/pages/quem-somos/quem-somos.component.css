@@ -2,7 +2,7 @@
 
 .ngup-container {
   max-width: 1100px;
-  margin: 60px auto;
+  margin: 50px auto;
   padding: 0 20px;
   color: #0b1026;
   font-family: 'Segoe UI', sans-serif;
@@ -27,7 +27,10 @@
 
   color: #6d7996;
   font-size: 1.1rem;
-  margin-top: 10px;
+  margin-top: 26px;
+}
+.carousel.active{
+  margin-top: 20px;
 }
 
 /* Carrossel */
@@ -36,6 +39,24 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(11, 16, 38, 0.15);
+}
+
+.carousel {
+  border-radius: 18px ;
+  border:solid  #a21112 ;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 6s ease;
+}
+
+.carousel-item.active img {
+  transform: scale(1.08);
 }
 
 
@@ -53,14 +74,17 @@
 /* Conteúdo */
 .ngup-content {
   font-family: "Montserrat", sans-serif;
-
+margin-top: 18px;
   font-size: 1.05rem;
   line-height: 1.8;
   color: #0b1026;
 }
 
 .ngup-content p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.ngup-content strong{
+  color: #a21112;
 }
 
 /* Destaque */

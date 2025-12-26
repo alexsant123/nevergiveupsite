@@ -28,4 +28,20 @@ export const routes: Routes = [
       import('./pages/teacher-regis/teacher-regis.component')
         .then(m => m.TeacherRegisComponent)
   },
+  {
+    path: 'kids',
+    loadComponent: () =>
+      import('./pages/kids/kids.component')
+        .then(m => m.KidsComponent)
+  },
+  {
+    path: 'corporativo',
+    loadComponent: () =>
+      import('./pages/corporativo/corporativo.component')
+        .then(m => m.CorporativoComponent)
+  },
+
+
+
+
 ];
