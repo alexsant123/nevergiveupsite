@@ -1,4 +1,101 @@
-.coporativo-container{
-  max-width: 900px;
-  padding: 45px 20px;
+.coporativo-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.coporativo-container > header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.coporativo-container > header h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.coporativo-container > header p {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+.coporativo-container section {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ===========================
+   TÍTULOS DAS SECTIONS
+=========================== */
+.coporativo-container section h2 {
+  font-size: 1.8rem;
+  color: var(--secondary);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.coporativo-container section h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--highlight);
+  display: block;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+/* ===========================
+   TEXTOS
+=========================== */
+.coporativo-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+/* ===========================
+   LISTAS
+=========================== */
+.coporativo-container ul {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.coporativo-container ul li {
+  padding-left: 28px;
+  margin-bottom: 12px;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.coporativo-container ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--highlight);
+  font-weight: bold;
+}
+
+/* ===========================
+   HIGHLIGHT
+=========================== */
+.highlight {
+  color: var(--primary);
+  font-weight: 600;
 }
