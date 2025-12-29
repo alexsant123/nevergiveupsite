@@ -1,109 +1,146 @@
+/* ===============================
+   CONTAINER PRINCIPAL
+================================ */
 .coporativo-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  font-family: "Inter", "Segoe UI", sans-serif;
-  color: var(--text);
+  max-width: 900px;
+   padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0b1026;
 }
-:root {
-  --primary: #051b50;       /* Azul institucional */
-  --secondary: #0d2c8b;
-  --highlight: #c9a24d;     /* Dourado / destaque */
-  --text: #1f2937;
-  --muted: #6b7280;
-  --bg-light: #f9fafb;
-  --white: #ffffff;
-}
-/* ===========================
+
+/* ===============================
    HEADER
-=========================== */
-.coporativo-container > header {
+================================ */
+.coporativo-container header {
+  margin-top: 25px;
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 20px;
 }
 
-.coporativo-container > header h1 {
-  font-size: 3rem;
-  color: var(--primary);
+.coporativo-container header h1 {
+  background-color: #a21112;
+  font-size: 2.2rem;
+  font-weight: 800;
   margin-bottom: 16px;
+  color: white;
 }
 
-.coporativo-container > header p {
-  font-size: 1.2rem;
-  color: var(--muted);
-  max-width: 720px;
+.coporativo-container header p {
+  font-size: 1.1rem;
+  color: #6d7996;
+  max-width: 640px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
-/* ===========================
-   SECTIONS
-=========================== */
+/* ===============================
+   SEÇÕES
+================================ */
 .coporativo-container section {
-  background: var(--white);
-  border-radius: 16px;
-  padding: 40px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 48px;
 }
 
-/* ===========================
-   TÍTULOS DAS SECTIONS
-=========================== */
-.coporativo-container section h2 {
-  font-size: 1.8rem;
-  color: var(--secondary);
-  margin-bottom: 20px;
+/* TÍTULOS DAS SEÇÕES */
+.coporativo-container h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0b1026;
   position: relative;
 }
 
-.coporativo-container section h2::after {
+/* Linha decorativa igual à metodologia */
+.coporativo-container h2::after {
   content: "";
+  display: block;
   width: 60px;
   height: 4px;
-  background: var(--highlight);
-  display: block;
+  background: linear-gradient(135deg, #a21112, #051b50);
   margin-top: 8px;
   border-radius: 4px;
 }
 
-/* ===========================
-   TEXTOS
-=========================== */
+/* ===============================
+   TEXTO
+================================ */
 .coporativo-container p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.8;
+  color: #334155;
   margin-bottom: 16px;
-  color: var(--text);
 }
 
-/* ===========================
+/* ===============================
+   DESTAQUES
+================================ */
+.highlight {
+  color: #a21112;
+  font-weight: 700;
+}
+
+/* ===============================
    LISTAS
-=========================== */
+================================ */
 .coporativo-container ul {
-  list-style: none;
   margin-top: 16px;
+  padding-left: 20px;
 }
 
 .coporativo-container ul li {
-  padding-left: 28px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.6;
   position: relative;
-  font-size: 1.05rem;
 }
 
-.coporativo-container ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: var(--highlight);
-  font-weight: bold;
+/* Bullet personalizado */
+.coporativo-container ul li::marker {
+  color: #a21112;
 }
 
-/* ===========================
-   HIGHLIGHT
-=========================== */
-.highlight {
-  color: var(--primary);
+/* ===============================
+   BLOCO DE ÊNFASE (opcional)
+   (se quiser destacar algo depois)
+================================ */
+.corporativo-highlight-box {
+  background: linear-gradient(135deg, #a21112, #051b50);
+  color: #fff;
+   border-radius: 14px;
+  margin: 40px 0;
   font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+  .coporativo-container header h1 {
+    font-size: 1.9rem;
+  }
+
+  .coporativo-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .coporativo-container {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coporativo-container header h1 {
+    font-size: 1.7rem;
+  }
+
+  .coporativo-container header p {
+    font-size: 1rem;
+  }
+
+  .coporativo-container p,
+  .coporativo-container ul li {
+    font-size: 0.95rem;
+  }
 }
