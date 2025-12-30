@@ -20,6 +20,7 @@
 
 .coporativo-container header h1 {
   background-color: #a21112;
+  border-radius: 2%;
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 16px;
@@ -27,8 +28,10 @@
 }
 
 .coporativo-container header p {
+  border-radius: 5%;
+  background-color: #a21112;
   font-size: 1.1rem;
-  color: #6d7996;
+  color: white;
   max-width: 640px;
   margin: 0 auto;
   line-height: 1.6;
