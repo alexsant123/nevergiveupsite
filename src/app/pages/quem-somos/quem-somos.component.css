@@ -132,11 +132,12 @@
 }
 
 .ngup-subtitle {
+  background-color: #a21112;
   font-family: 'Segoe UI', sans-serif;
 
-  color: #6d7996;
+  color: white;
   font-size: 1.1rem;
-  margin-top: 26px;
+  margin-top: 10px;
 }
 .carousel.active{
   margin-top: 20px;

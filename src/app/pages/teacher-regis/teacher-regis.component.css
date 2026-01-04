@@ -19,9 +19,11 @@
 
 /* Nome */
 .regis-name {
+  background-color: #a21112;
   font-size: 1.9rem;
   font-weight: 800;
-  color: #0b1026;
+  border-radius: 5%;
+  color: white;
   margin-bottom: 8px;
 }
 
