@@ -1,0 +1,105 @@
+/* ===============================
+   MOBILE FIRST
+================================ */
+
+.metodologia-container {
+  margin: 50px auto;
+  padding: 0 20px;
+
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* Título principal */
+.metodologia-container .titulo {
+  background-color: #a21112;
+  border-radius: 2%;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Texto introdutório */
+.metodologia-container .intro {
+   font-family: "Segoe UI", sans-serif;
+
+  text-align: center;
+  border-radius: 2%;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: #a21112;
+  color: white;
+}
+
+/* Subtítulos */
+.metodologia-container .subtitulo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+  color: #a21112;
+  font-weight: 600;
+}
+
+/* Ícones */
+.metodologia-container .subtitulo span {
+  font-size: 1.4rem;
+}
+
+/* Texto dos blocos */
+.metodologia-container .texto {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ===============================
+   TABLET (>= 768px)
+================================ */
+@media (min-width: 768px) {
+  .metodologia-container {
+    padding: 3.5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .metodologia-container .titulo {
+    font-size: 2.2rem;
+  }
+
+  .metodologia-container .intro {
+    font-size: 1.05rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+
+  .metodologia-container .subtitulo {
+    font-size: 1.35rem;
+  }
+
+  .metodologia-container .texto {
+    font-size: 1rem;
+    padding-left: 2rem; /* alinha com ícones */
+  }
+}
+
+/* ===============================
+   DESKTOP (>= 1024px)
+================================ */
+@media (min-width: 1024px) {
+  .metodologia-container {
+    max-width: 1100px;
+  }
+
+  .metodologia-container .titulo {
+    font-size: 2.5rem;
+  }
+
+  .metodologia-container .subtitulo span {
+    font-size: 1.6rem;
+  }
+}
