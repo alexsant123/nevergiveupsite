@@ -1,0 +1,161 @@
+/* ===============================
+   CONTAINER PRINCIPAL
+================================ */
+.english-survivor-container {
+  max-width: 900px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+  color: #0b1026;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.english-survivor-container header {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.english-survivor-container header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #0b1026;
+}
+
+.english-survivor-container header p {
+  font-size: 1.1rem;
+  color: #6d7996;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===============================
+   SEÇÕES
+================================ */
+.english-survivor-container section {
+  margin-bottom: 48px;
+}
+
+/* ===============================
+   TÍTULOS DAS SEÇÕES
+================================ */
+.english-survivor-container h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0b1026;
+  position: relative;
+}
+
+/* Linha decorativa (padrão do site) */
+.english-survivor-container h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #a21112, #051b50);
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+/* ===============================
+   TEXTO
+================================ */
+.english-survivor-container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   LISTA DE SITUAÇÕES
+================================ */
+.english-survivor-container ul {
+  margin-top: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.english-survivor-container ul li {
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1rem;
+  color: #334155;
+}
+
+/* Ícone de check */
+.english-survivor-container ul li::before {
+  content: "✈️";
+  position: absolute;
+  left: 0;
+}
+
+/* ===============================
+   DESTAQUES
+================================ */
+.highlight {
+  color: #a21112;
+  font-weight: 700;
+}
+
+/* ===============================
+   BLOCO DE ÊNFASE (IDEAL PRA “IDEAL PARA”)
+================================ */
+.survivor-highlight-box {
+  background: linear-gradient(135deg, #a21112, #051b50);
+  color: #ffffff;
+  padding: 22px 26px;
+  border-radius: 16px;
+  margin: 48px 0;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.survivor-highlight-box ul {
+  margin-top: 16px;
+}
+
+.survivor-highlight-box ul li {
+  color: #ffffff;
+}
+
+.survivor-highlight-box ul li::before {
+  content: "✔";
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+  .english-survivor-container header h1 {
+    font-size: 1.9rem;
+  }
+
+  .english-survivor-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .english-survivor-container {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .english-survivor-container header h1 {
+    font-size: 1.7rem;
+  }
+
+  .english-survivor-container header p {
+    font-size: 1rem;
+  }
+
+  .english-survivor-container p,
+  .english-survivor-container ul li {
+    font-size: 0.95rem;
+  }
+}
