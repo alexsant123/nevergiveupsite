@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import {EnglishSurvivorComponent} from './pages/english-survivor/english-survivor.component';
 
 export const routes: Routes = [
 
@@ -41,7 +42,12 @@ export const routes: Routes = [
         .then(m => m.CorporativoComponent)
   },
 
-
+  {
+    path: 'english-survivor',
+    loadComponent: () =>
+      import('./pages/english-survivor/english-survivor.component')
+        .then(c => c.EnglishSurvivorComponent)
+  }
 
 
 ];
