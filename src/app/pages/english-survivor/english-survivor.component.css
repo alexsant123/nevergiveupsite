@@ -18,15 +18,19 @@
 }
 
 .english-survivor-container header h1 {
+  background-color: #a21112;
+  border-radius: 3%;
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 16px;
-  color: #0b1026;
+  color: white;
 }
 
 .english-survivor-container header p {
-  font-size: 1.1rem;
-  color: #6d7996;
+  background-color: #a21112;
+  border-radius: 2%;
+  font-size: 16px;
+  color: white;
   max-width: 680px;
   margin: 0 auto;
   line-height: 1.6;
@@ -46,7 +50,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #0b1026;
+  color:#a21112 ;
   position: relative;
 }
 
@@ -67,9 +71,12 @@
 .english-survivor-container p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #334155;
-  margin-bottom: 16px;
+   margin-bottom: 16px;
 }
+.container-header{
+
+}
+
 
 /* ===============================
    LISTA DE SITUAÇÕES
@@ -116,8 +123,8 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.survivor-highlight-box ul {
-  margin-top: 16px;
+.survivor-highlight-box h2{
+  color: white;
 }
 
 .survivor-highlight-box ul li {
