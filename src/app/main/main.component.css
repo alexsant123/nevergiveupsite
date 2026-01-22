@@ -1,24 +1,9 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+ /* Altura do carrossel */
 
-/* Altura do carrossel */
-.carousel-inner {
-  height: auto;
-}
 
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
-app-main {
-  display: block;
-  width: 100%;
-  margin-bottom: 40px;
-  padding-top: 150px; /* se o header for fixo */
-}
+.main-container{
+  max-width: 900px;
+  margin-top: 70px;
+ }
 
- :host {
-  display: block;
-  margin-bottom: 40px; /* pode aumentar */
-}
