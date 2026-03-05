@@ -4,15 +4,21 @@ margin-top: 30px;
 }
 
 .titulo {
+  background-color: #a21112;
+  color: white;
+  border-radius: 2%;
   font-size: 22px;
   text-align: center;
   margin-bottom: 16px;
 }
 
 .intro {
+
+  background-color: #a21112;
+  color: white;
+  border-radius: 2%;
   text-align: center;
-  color: #555;
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .metodo-card {
