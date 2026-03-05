@@ -1,57 +1,61 @@
 <section class="metodologia-container">
 
   <h1 class="titulo">
-    Nossa Metodologia Integrada – Ensino de Inglês com Significado
+    Nossa Metodologia Integrativa – Ensino de Inglês com Significado
   </h1>
 
   <p class="intro">
-    Na Never Give Up English School,
-    o ensino do Inglês é fundamentado
-    na abordagem ESL (English as a Second Language),
-    que busca desenvolver o idioma de forma natural, comunicativa e contextualizada.
-    Nosso objetivo é fazer com que o
-    aluno pense e se expresse em Inglês desde cedo, construindo o aprendizado a partir de situações reais,
-    brincadeiras, histórias e experiências significativas.
+    Na Never Give Up English School, o ensino do Inglês é fundamentado
+    na abordagem ESL (English as a Second Language), que busca desenvolver o idioma de forma natural,
+    comunicativa e contextualizada.
   </p>
 
-  <h2 class="subtitulo"><span>🌟</span> UMA ABORDAGEM QUE INTEGRA TEORIA E PRÁTICA
-  </h2>
-  <p class="texto">
-    O ESL é potencializado pela integração de diversas metodologias pedagógicas contemporâneas, que ampliam as
-    possibilidades de aprendizagem e respeitam as diferentes formas de aprender.
-  </p>
+  <!-- ITEM -->
+  <div class="metodo-card">
 
-  <h2 class="subtitulo"><span>💡</span> DESIGN THINKING NA EDUCAÇÃO</h2>
-  <p class="texto">
-    Aplicamos o Design Thinking como uma metodologia criativa e colaborativa. As crianças são incentivadas a explorar,
-    experimentar, errar e recriar, desenvolvendo empatia, autonomia e pensamento crítico. Essa abordagem estimula a
-    resolução de problemas de forma criativa e o aprendizado pela experiência.
-  </p>
+    <img src="assets/imgs/hibrido.png" alt="Teoria e prática" width="30px">
 
-  <h2 class="subtitulo"><span>📚</span> DIDÁTICA E PSICOLOGIA DA EDUCAÇÃO
-  </h2>
-  <p class="texto">
-    A prática docente é guiada pelas contribuições de Piaget, Vygotsky, Wallon e Gardner, respeitando o desenvolvimento
-    cognitivo, emocional e as múltiplas inteligências da criança.
-  </p>
+    <h2 (click)="toggle(0)" class="subtitulo">
+      🌟 Uma abordagem que integra teoria e prática
+    </h2>
 
-  <h2 class="subtitulo"><span>🌈</span>DESENHO UNIVERSAL PARA A APRENDIZAGEM (DUA)
-  </h2>
-  <p class="texto">
-    Aplicamos o DUA para garantir inclusão e acessibilidade, oferecendo múltiplas formas de representação, expressão e
-    engajamento.
-  </p>
+    <p class="resumo">
+      Integra metodologias modernas respeitando diferentes formas de aprender.
+    </p>
 
-  <h2 class="subtitulo"><span>✏</span>ALFABETIZAÇÃO E LETRAMENTO</h2>
-  <p class="texto">
-    A alfabetização em Inglês ocorre de forma lúdica e contextualizada, integrando oralidade, leitura e escrita.
-  </p>
+    <p class="extra" [class.ativo]="ativo === 0">
+      O ESL é potencializado pela integração de diversas metodologias pedagógicas contemporâneas,
+      que ampliam as possibilidades de aprendizagem.
+    </p>
 
-  <h2 class="subtitulo"><span>🔍</span>METODOLOGIAS ATIVAS E PROJETOS
-  </h2>
-  <p class="texto">
-    Trabalhamos com aprendizagem ativa e projetos interdisciplinares, conectando o Inglês com cultura, música,
-    cotidiano e criatividade.
-  </p>
+    <button (click)="toggle(0)">
+      {{ ativo === 0 ? 'Ver menos' : 'Ver mais' }}
+    </button>
+
+  </div>
+
+  <!-- ITEM -->
+  <div class="metodo-card">
+
+    <img src="assets/imgs/Oficina.pngn" alt="Teoria e prática" width="30px">
+
+    <h2 (click)="toggle(1)" class="subtitulo">
+      💡 Design Thinking na Educação
+    </h2>
+
+    <p class="resumo">
+      Incentiva criatividade, autonomia e resolução de problemas.
+    </p>
+
+    <p class="extra" [class.ativo]="ativo === 1">
+      As crianças exploram, experimentam e recriam, desenvolvendo empatia,
+      pensamento crítico e aprendizagem pela experiência.
+    </p>
+
+    <button (click)="toggle(1)">
+      {{ ativo === 1 ? 'Ver menos' : 'Ver mais' }}
+    </button>
+
+  </div>
 
 </section>

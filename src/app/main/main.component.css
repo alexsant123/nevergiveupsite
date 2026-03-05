@@ -3,7 +3,8 @@
 
 
 .main-container{
-  max-width: 900px;
-  margin-top: 70px;
+overflow:hidden;
+max-width: 800px;
+  margin-top: 60px;
  }
 
