@@ -1,26 +1,30 @@
 .metodologia-container {
-margin-top: 30px;
-  padding: 20px ;
+  margin-top: 30px;
+  padding: 20px;
 }
 
+/* Título */
 .titulo {
   background-color: #a21112;
   color: white;
-  border-radius: 2%;
-  font-size: 22px;
+  border-radius: 4px;
+  font-size: 1.9rem;
   text-align: center;
   margin-bottom: 16px;
+  padding: 8px;
 }
 
+/* Texto introdutório */
 .intro {
-
   background-color: #a21112;
   color: white;
-  border-radius: 2%;
+  border-radius: 6px;
   text-align: center;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
 }
 
+/* Card da metodologia */
 .metodo-card {
   background: #fff;
   border-radius: 16px;
@@ -30,23 +34,29 @@ margin-top: 30px;
   text-align: center;
 }
 
+/* Imagens */
 .metodo-card img {
   width: 100%;
+  max-width: 320px;
+  height: auto;
   border-radius: 12px;
   margin-bottom: 12px;
 }
 
+/* Subtítulo */
 .subtitulo {
   font-size: 18px;
   margin-bottom: 8px;
   cursor: pointer;
 }
 
+/* Resumo */
 .resumo {
   font-size: 14px;
   color: #555;
 }
 
+/* Texto expandido */
 .extra {
   display: none;
   margin-top: 10px;
@@ -57,6 +67,7 @@ margin-top: 30px;
   display: block;
 }
 
+/* Botão */
 button {
   margin-top: 12px;
   background: #ff6600;
@@ -71,7 +82,42 @@ button {
 button:hover {
   background: #e65c00;
 }
-img{
-  width: 70%;
-  height: 70%;
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+
+  .metodologia-container{
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .metodo-card img{
+    max-width: 280px;
+  }
+
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+  .metodologia-container{
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+
+  .metodo-card{
+    max-width: 500px;
+    margin: 30px auto;
+  }
+
+  .metodo-card img{
+    max-width: 600px;
+  }
+
 }

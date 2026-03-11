@@ -1,10 +1,32 @@
- /* Altura do carrossel */
-
-
-
 .main-container{
-overflow:hidden;
-max-width: 800px;
-  margin-top: 60px;
- }
+  overflow: hidden;
+  max-width: 800px;
+  margin: 60px auto 0 auto;
+}
 
+.main-container img{
+  width: 100%;
+  display: block;
+}
+
+/* MOBILE */
+.banner-desktop{
+  display: none;
+}
+
+/* DESKTOP */
+@media (min-width:1024px){
+
+  .main-container{
+    max-width: 1300px;
+  }
+
+  .banner-mobile{
+    display: none;
+  }
+
+  .banner-desktop{
+    display: block;
+  }
+
+}

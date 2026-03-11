@@ -5,7 +5,6 @@
 .metodologia-container {
   margin: 50px auto;
   padding: 0 20px;
-
   font-family: 'Segoe UI', Roboto, Arial, sans-serif;
   color: #2c2c2c;
   line-height: 1.7;
@@ -14,23 +13,25 @@
 /* Título principal */
 .metodologia-container .titulo {
   background-color: #a21112;
-  border-radius: 2%;
+  border-radius: 4px;
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 15px;
   color: white;
+  padding: 8px;
 }
 
 /* Texto introdutório */
 .metodologia-container .intro {
-   font-family: "Segoe UI", sans-serif;
-
+  font-family: "Segoe UI", sans-serif;
   text-align: center;
-  border-radius: 2%;
-   font-size:1rem;
+  border-radius: 8px;
+  font-size: 1rem;
   margin-top: 10px;
+  padding: 15px;
   background-color: #a21112;
   color: white;
+  line-height: 1.7;
 }
 
 /* Subtítulos */
@@ -59,11 +60,13 @@
 /* ===============================
    TABLET (>= 768px)
 ================================ */
+
 @media (min-width: 768px) {
+
   .metodologia-container {
-    padding: 3.5rem 2rem;
+    padding: 3rem 2rem;
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .metodologia-container .titulo {
@@ -72,8 +75,9 @@
 
   .metodologia-container .intro {
     font-size: 1.05rem;
-    max-width: 800px;
-    margin: 0 auto 3rem;
+    max-width: 750px;
+    margin: 15px auto 40px auto;
+    padding: 18px 25px;
   }
 
   .metodologia-container .subtitulo {
@@ -82,23 +86,38 @@
 
   .metodologia-container .texto {
     font-size: 1rem;
-    padding-left: 2rem; /* alinha com ícones */
+    padding-left: 2rem;
   }
+
 }
 
 /* ===============================
    DESKTOP (>= 1024px)
 ================================ */
+
 @media (min-width: 1024px) {
+
   .metodologia-container {
     max-width: 1100px;
+    margin: auto;
   }
 
   .metodologia-container .titulo {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
+  }
+
+   .metodologia-container .intro {
+    max-width: 750px;
+    margin: 20px auto 50px auto;
+    padding: 22px 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   }
 
   .metodologia-container .subtitulo span {
     font-size: 1.6rem;
   }
+
 }

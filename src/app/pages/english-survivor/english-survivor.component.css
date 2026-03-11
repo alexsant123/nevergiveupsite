@@ -166,3 +166,13 @@
     font-size: 0.95rem;
   }
 }
+@media (min-width: 1024px) {
+  .english-survivor-container{
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+  }
+
+}
+

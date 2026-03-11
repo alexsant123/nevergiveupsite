@@ -120,6 +120,7 @@
    RESPONSIVIDADE
 ================================ */
 @media (max-width: 768px) {
+
   .coporativo-container header h1 {
     font-size: 1.9rem;
   }
@@ -146,4 +147,13 @@
   .coporativo-container ul li {
     font-size: 0.95rem;
   }
+}
+@media (min-width: 1024px) {
+  .coporativo-container{
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+  }
+
 }
